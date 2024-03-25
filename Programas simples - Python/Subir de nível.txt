@@ -3,7 +3,7 @@ from random import randint    #para importar números aleatórios
 
 
 nivel_atual = 1 
-nivel_final = 5
+nivel_final = int(input('Selecione uma dificuldade de 2 a 5')) 
 
 
 print(f'Você está no nível {nivel_atual}')
@@ -31,8 +31,9 @@ while nivel_atual < nivel_final:
     
     else: 
         time.sleep(0.8)
-        print(f'Você está no nível {nivel_atual}')
-print(f'Você chegou ao nível final! ({nivel_final}).\nPara ir para o próximo Minigame, acesse o próximo arquivo!')
+        print(f'Continua no nível {nivel_atual}')
+time.sleep(0.8)        
+print(f'Você chegou ao nível final!({nivel_final}).\nPara ir para o próximo Minigame, acesse o próximo arquivo!')
         
         
     
